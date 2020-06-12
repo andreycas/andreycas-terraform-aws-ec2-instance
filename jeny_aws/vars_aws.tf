@@ -22,5 +22,5 @@ variable "aws_security_group_id" {
 }
 
 variable "email" {
-	default = "js@broadcom.com"
+	default = "johnny.castro@arus.com.co"
 }
