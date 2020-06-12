@@ -38,7 +38,7 @@ resource "aws_instance" "cda_instance" {
 		docker-compose build
 		docker-compose up -d
 		cd /tmp
-		printf '%s\n' '{"Source": "zhenya.stoeva@gmail.com", "Template": "MyTemplateJ_${local.in_id}", "ConfigurationSetName": "ConfigSet", "Destination": {"ToAddresses": [ "jenya.stoeva@broadcom.com"]}, "TemplateData": "{}"}' >myemail1.json
+		printf '%s\n' '{"Source": "jacastro270@misena.edu.co", "Template": "MyTemplateJ_${local.in_id}", "ConfigurationSetName": "ConfigSet", "Destination": {"ToAddresses": [ "jenya.stoeva@broadcom.com"]}, "TemplateData": "{}"}' >myemail1.json
 		export AWS_ACCESS_KEY_ID=${var.aws_access_key} 
 		export AWS_SECRET_ACCESS_KEY=${var.aws_secret_key}
 		export AWS_DEFAULT_REGION=us-east-1
@@ -49,8 +49,8 @@ resource "aws_instance" "cda_instance" {
 resource "aws_ses_template" "MyTemplateJ" {
 	name    = "MyTemplateJ_${local.in_id}"
 	subject = "Greetings, Jeny!"
-	html    = "<h1>Hello Jeny,</h1><p>Your app url is http://${aws_instance.cda_instance.*.public_ip[0]}.</p>"
-	text    = "Hello Jeny, Your app url is http://${aws_instance.cda_instance.*.public_ip[0]}."
+	html    = "<h1>Hello johnny,</h1><p>Your app url is http://${aws_instance.cda_instance.*.public_ip[0]}.</p>"
+	text    = "Hello johnny, Your app url is http://${aws_instance.cda_instance.*.public_ip[0]}."
 }
 
 output "public_ip" {
