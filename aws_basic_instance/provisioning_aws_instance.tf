@@ -67,16 +67,16 @@ resource "aws_launch_template" "foo" {
   }
 
   network_interfaces {
-    associate_public_ip_address = true
+    associate_public_ip_address = false
   }
 
   placement {
-    availability_zone = "us-west-2a"
+    availability_zone = "us-east-1"
   }
 
   ram_disk_id = "test"
 
-  vpc_security_group_ids = ["sg-12345678"]
+  vpc_security_group_ids = ["sg-0e797008e6f3e9fad"]
 
   tag_specifications {
     resource_type = "instance"
