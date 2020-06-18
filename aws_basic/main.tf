@@ -2,7 +2,7 @@ variable "aws_access_key" {}
 variable "aws_secret_key" {}
 //variable "aws_ami" {default = "ami-0080e4c5bc078760e"}
 variable "aws_ami" {default = "ami-031ecc7e9d5b9a82d"}
-variable "aws_security_group_id" {default = "johnny-key-us-east-1"}
+variable "aws_security_group_id" {default = "sg-0e797008e6f3e9fad"}
 variable "instance_type" {default = "t2.micro"}
 
 provider "aws" {
