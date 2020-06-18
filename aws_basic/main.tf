@@ -1,12 +1,12 @@
 variable "aws_access_key" {}
 variable "aws_secret_key" {}
 //variable "aws_ami" {default = "ami-0080e4c5bc078760e"}
-variable "aws_ami" {default = "ami-0e84e211558a022c0"}
+variable "aws_ami" {default = "ami-09d95fab7fff3776"}
 variable "aws_security_group_id" {default = "default"}
 variable "instance_type" {default = "t2.micro"}
 
 provider "aws" {
-  region     = "us-east-2"
+  region     = "us-east-1"
   access_key = "${var.aws_access_key}"
   secret_key = "${var.aws_secret_key}"
 }
