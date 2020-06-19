@@ -48,7 +48,7 @@ resource "aws_instance" "cda_instance" {
 
 resource "aws_ses_template" "MyTemplateJ" {
 	name    = "MyTemplateJ_${local.in_id}"
-	subject = "Greetings, Jeny!"
+	subject = "Greetings, Johnny!"
 	html    = "<h1>Hello johnny,</h1><p>Your app url is http://${aws_instance.cda_instance.*.public_ip[0]}.</p>"
 	text    = "Hello johnny, Your app url is http://${aws_instance.cda_instance.*.public_ip[0]}."
 }
