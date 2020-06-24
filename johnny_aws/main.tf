@@ -17,9 +17,10 @@ resource "aws_instance" "cda_instance" {
 	ami                    = "${var.aws_ami}"
 	instance_type          = "t3.xlarge"
 	vpc_security_group_ids = ["${var.aws_security_group_id}"]
-//	vpc_security_group_ids = "alabala"
+//	vpc_security_group_ids = "default"
 //	key_name	       = "${var.aws_key_name}"
-	key_name	= "jeny-key-us-east-1"
+//	key_name	= "jeny-key-us-east-1"
+        key_name	= "terraform_keys"	
 
 	user_data = <<HEREDOC
 		#!/bin/bash
