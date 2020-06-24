@@ -1,7 +1,7 @@
 variable "aws_access_key" {}
 variable "aws_secret_key" {}
 //variable "aws_ami" {default = "ami-0080e4c5bc078760e"}
-variable "aws_ami" {default = "ami-085925f297f89fce1"}
+variable "aws_ami" {default = "ami-0ac80df6eff0e70b5"}
 variable "aws_security_group_id" {default = "default"}
 variable "instance_type" {default = "t2.micro"}
 
