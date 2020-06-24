@@ -7,11 +7,11 @@ variable "aws_secret_key" {
 }
 
 variable "aws_key_name" {
-	default = "terraform_keys"
+	default = "terraform_keys2"
 }
 
 variable "private_key_file" {
-	default = "terraform_keys.ppk"
+	default = "terraform_keys2.pem"
 }
 variable "aws_ami" {
 	default = "ami-0080e4c5bc078760e"
