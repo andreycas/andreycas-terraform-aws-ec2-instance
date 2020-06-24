@@ -7,18 +7,18 @@ variable "aws_secret_key" {
 }
 
 variable "aws_key_name" {
-	default = "jeny-key-us-east-1"
+	default = "terraform_keys"
 }
 
 variable "private_key_file" {
-	default = "jeny-key-us-east-1.pem"
+	default = "terraform_keys.ppk"
 }
 variable "aws_ami" {
 	default = "ami-0080e4c5bc078760e"
 }
 
 variable "aws_security_group_id" {
-	default = "sg-495c840a"
+	default = "default"
 }
 
 variable "email" {
