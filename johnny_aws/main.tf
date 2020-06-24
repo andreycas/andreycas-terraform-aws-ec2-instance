@@ -32,8 +32,8 @@ resource "aws_instance" "cda_instance" {
 		chmod +x /usr/local/bin/docker-compose
 		sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 		yum install -y git
-		mkdir  /tmp/jenya
-                cd /tmp/jenya
+		mkdir  /tmp/johnnya
+                cd /tmp/johnnya
 		git clone git://github.com/jenyss/requestbin.git
 		cd requestbin
 		docker-compose build
