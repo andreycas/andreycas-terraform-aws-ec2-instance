@@ -20,7 +20,7 @@ resource "aws_instance" "cda_instance" {
 //	vpc_security_group_ids = "default"
 //	key_name	       = "${var.aws_key_name}"
 //	key_name	= "jeny-key-us-east-1"
-        key_name	= "terraform_keys"	
+        key_name	= "terraform_keys2"	
 
 	user_data = <<HEREDOC
 		#!/bin/bash
